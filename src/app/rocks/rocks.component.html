@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row" *ngFor="let post of allPosts">
+    <div class="card card-block">
+      <h4 class="card-title">{{post.name}}</h4>
+      <p class="card-text">DIAMETER-MIN:{{post.estimated_diameter.miles.estimated_diameter_min}} MILES</p>
+      <a href="#" class="card-link">ORBITING BODY:{{post.close_approach_data[0].orbiting_body}}</a>
+      <a href="#" class="card-link"> RELATIVE VELOCITY{{post.close_approach_data[0].relative_velocity.miles_per_hour}}</a>
+    </div>
+  </div>
+</div>
